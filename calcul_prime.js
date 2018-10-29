@@ -3,8 +3,11 @@ var stopped= false;
 onmessage= function (e)
 {
 	if(e.data == "stop")
-	{
 		stopped= true;
+	}
+	else
+		if(e.data == "stop"){
+		stopped= false;
 	}
 	
 }
